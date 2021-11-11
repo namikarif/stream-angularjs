@@ -1,0 +1,20 @@
+<div ng-controller="ListCtrl">
+    <label ng-if="loading">
+        Loading....
+    </label>
+
+    <label ng-if="errorMessage">
+        {{errorMessage}}
+    </label>
+    <div class="column" ng-if="dataList.length > 0">
+        <div class="card" ng-repeat="item in dataList">
+            <img class="card-img-top img-fluid" width="{{item.images['Poster Art'].width}}"
+                 height="{{item.images['Poster Art'].height}}" src="{{item.images['Poster Art'].url}}"
+                 alt="Card image cap">
+            <div class="card-block">
+                <small class="card-title"> {{item.title}}</small>
+            </div>
+        </div>
+    </div>
+    <span ng-if="errorMessage">{{errorMessage}}</span>
+</div>

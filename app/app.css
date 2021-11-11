@@ -1,0 +1,237 @@
+/* app css stylesheet */
+
+body {
+    font-family: 'PT Serif' !important;
+}
+
+.menu {
+    list-style: none;
+    border-bottom: 0.1em solid black;
+    margin-bottom: 2em;
+    padding: 0 0 0.5em;
+}
+
+.menu:before {
+    content: "[";
+}
+
+.menu:after {
+    content: "]";
+}
+
+.menu > li {
+    display: inline;
+}
+
+.menu > li + li:before {
+    content: "|";
+    padding-right: 0.3em;
+}
+
+.header {
+    width: 100vw;
+    height: 60px;
+    color: white;
+    background-color: #4581FA;
+}
+
+.header .right-side {
+    float: right;
+    display: flex;
+    height: 60px;
+    align-items: center;
+}
+
+.header .right-side .login {
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.header .right-side .trial-button {
+    border: unset;
+    color: white;
+    height: 32px;
+    font-size: 16px;
+    background-color: #222222;
+}
+
+.header .left-side {
+    font-size: 24px;
+    float: left;
+}
+
+.header .left-side label {
+    cursor: pointer;
+    margin: 11px 0 !important;
+}
+
+.sub-title {
+    width: 100vw;
+    height: 40px;
+    color: white;
+    background-color: #3c3b3b;
+}
+
+.sub-title label {
+    margin: 7px 0 0;
+}
+
+.card-title {
+    max-width: 95%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    margin: 0;
+    padding: 4px;
+}
+
+.menu-list .list-item {
+    display: flex;
+    height: 240px;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100% !important;
+    background: url(http://localhost:8000/assets/placeholder.png) no-repeat;
+    cursor: pointer;
+}
+
+.bg-black {
+    background-color: #1a1b1c !important;
+}
+
+.menu-list .menu-title {
+    color: white;
+    margin: auto !important;
+    font-size: 38px;
+    text-transform: uppercase;
+}
+
+.main-content {
+    padding: 10px 0;
+    display: flex;
+    min-height: calc(100vh - 120px);
+}
+
+.app-footer {
+    font-size: 16px;
+    height: 200px;
+    padding: 25px 0;
+    background-color: #222222;
+}
+
+.app-footer .footer-copyright {
+    color: #9b9999;
+    margin: 10px 0;
+}
+
+.app-footer .footer-menu ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.app-footer .footer-menu ul .menu-list-item {
+    color: #cccccc;
+    cursor: pointer;
+}
+
+.app-footer .footer-menu ul .menu-list-item:after {
+    content: ' | ';
+    margin: 0 10px;
+}
+
+.app-footer .footer-menu ul .menu-list-item:last-child:after {
+    content: '' !important;
+}
+
+.social-media-link {
+    display: flex;
+    margin-top: 15px;
+    float: left;
+}
+
+.store-link {
+    display: flex;
+    float: right;
+}
+
+.store-link div {
+    width: 140px;
+    height: 44px;
+}
+
+.store-link div img {
+    width: 135px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.social-media-link span {
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.social-media-link .facebook {
+    background-image: url("assets/social/facebook-white.svg");
+}
+
+.social-media-link .facebook:hover {
+    background-image: url("assets/social/facebook-blue.svg") !important;
+}
+
+.social-media-link .instagram {
+    background-image: url("assets/social/instagram-white.svg");
+}
+
+.social-media-link .instagram:hover {
+    background-image: url("assets/social/instagram-blue.svg") !important;
+}
+
+.social-media-link .twitter {
+    margin: 2px 13px 0 3px;
+    background-image: url("assets/social/twitter-white.svg");
+}
+
+.social-media-link .twitter:hover {
+    background-image: url("assets/social/twitter-blue.svg") !important;
+}
+
+.column .card:nth-child(7n+1) {
+    clear: left !important;
+    margin-left: 0 !important;
+}
+
+.column .card:nth-child(7n) {
+    margin-right: 0 !important;
+}
+
+.column .card {
+    width: calc(93% / 7);
+    float: left !important;
+    margin: 5px !important;
+}
+
+@media (min-width: 1045px) {
+    .card-columns {
+        column-count: 7 !important;
+    }
+}
+
+@media (max-width: 1044px) and (min-width: 768px) {
+    .card-columns {
+        column-count: 5 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-columns {
+        column-count: 4 !important;
+    }
+}

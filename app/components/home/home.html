@@ -1,0 +1,8 @@
+<div ng-controller="HomeCtrl">
+        <div class="col-md-12 col-sm-12 row menu-list">
+            <div class="col-md-3 col-sm-4 mr-2 list-item bg-black" ng-click="navigateUrl(menuItem)" ng-repeat="menuItem in menus">
+<!--                <img class="card-img-top img-fluid" src="assets/placeholder.png">-->
+                <small class="menu-title">{{menuItem.title}}</small>
+            </div>
+        </div>
+</div>

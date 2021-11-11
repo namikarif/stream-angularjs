@@ -1,0 +1,34 @@
+<div ng-controller="AppFooterCtrl" class="app-footer">
+    <div class="container">
+        <div class="footer-menu">
+            <ul>
+                <li class="menu-list-item" ng-repeat="menuItem in menuList">
+                    <a>{{menuItem.title}}</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-copyright">
+            <small>
+                Copyright (c) 2016 DEMO Streaming. All Rights Reserved.
+            </small>
+        </div>
+        <div class="footer-additions">
+            <div class="social-media-link">
+                <span class="facebook"></span>
+                <span class="twitter"></span>
+                <span class="instagram"></span>
+            </div>
+            <div class="store-link">
+                <div class="apple">
+                    <img src="assets/store/app-store.svg" alt="apple">
+                </div>
+                <div class="google">
+                     <img src="assets/store/play-store.svg" alt="google">
+                </div>
+                <div class="windows">
+                     <img src="assets/store/windows-store.svg" alt="windows">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
